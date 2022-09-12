@@ -1,0 +1,46 @@
+Extensi :
+- Es7 React/Redux/GraphQL/React-Native
+- Simple React Snippets
+- Eslint
+- Setting Prettier :
+    masuk ke Setting : Ctrl + ,
+    cara formatter : ceklis Format default : Prettier
+    ceklis Format on save
+
+- untuk di react js :
+melakukan navigasi atau route bisa menggunkan react router dom
+- install node packed manager (npm) : npm i react-router-dom
+
+untuk pemanggilan api bisa menggunakan axios :
+npm i axios
+doc : 
+https://github.com/axios/axios
+https://axios-http.com/docs/intro
+
+untuk sofwere testing api :
+postman     : https://www.postman.com/downloads/
+swagger     : https://swagger.io/tools/swagger-ui/
+open api    : https://editor.swagger.io/
+
+untuk membuata backend simple :
+json-server : 
+https://www.npmjs.com/package/json-server
+https://github.com/typicode/json-server
+npm install -g json-server
+
+untuk menjalakan json-server :
+json-server --watch db_member.json --port 3004
+
+packages yg digunakan :
+- react-router-dom
+- axios
+- json-server
+- react-bootstrap
+- bootstrap
+- react-reveal
+- sweetalert2
+
+yafetadi@gmail.com
+
+
+

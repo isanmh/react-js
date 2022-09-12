@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "747d57b7-6bac-45fc-a98d-cc9f8cf4c202",
+		"name": "RESTFULL Json Server Fake API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11358474"
+	},
+	"item": [
+		{
+			"name": "Get Data dari Reqresin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Data Members",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3004/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"members"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Data Members",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3004/members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"members"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "308"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-McUXT/niD9MQ3tRDtwpHN8Q7384\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Sep 2022 03:36:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"nama\": \"Ihsan Miftahul Huda\",\n        \"email\": \"ihsan@gmail.com\",\n        \"alamat\": \"Bandung\"\n    },\n    {\n        \"id\": 2,\n        \"nama\": \"Rine\",\n        \"email\": \"rine@gmail.com\",\n        \"alamat\": \"Jakarta\"\n    },\n    {\n        \"id\": 3,\n        \"nama\": \"Dine\",\n        \"email\": \"dine@gmail.com\",\n        \"alamat\": \"Subang\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Post Data Member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\": \"Dzarin\",\r\n    \"email\": \"Dzarin@gmail.com\",\r\n    \"alamat\": \"Cimahi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3004/members",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"members"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post Data Member",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Dzarin\",\r\n    \"email\": \"Dzarin@gmail.com\",\r\n    \"alamat\": \"Cimahi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"members"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Location"
+						},
+						{
+							"key": "Location",
+							"value": "http://localhost:3004/members/4"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "86"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"56-fwWX2aJKU6rjkCHz/+C5TMf67VQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Sep 2022 03:40:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nama\": \"Dzarin\",\n    \"email\": \"Dzarin@gmail.com\",\n    \"alamat\": \"Cimahi\",\n    \"id\": 4\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Data Member",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\": \"Rine Winsrizal\",\r\n    \"email\": \"rine@gmail.com\",\r\n    \"alamat\": \"Jakarta\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3004/members/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"members",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Data Member",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Rine Winsrizal\",\r\n    \"email\": \"rine@gmail.com\",\r\n    \"alamat\": \"Jakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/members/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"members",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5d-dbXlNzrjIRsCQ/5adPNPAqIG1qY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Sep 2022 03:44:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nama\": \"Rine Winsrizal\",\n    \"email\": \"rine@gmail.com\",\n    \"alamat\": \"Jakarta\",\n    \"id\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Data Member",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3004/members/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"members",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Data Member",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama\": \"Rine Winsrizal\",\r\n    \"email\": \"rine@gmail.com\",\r\n    \"alamat\": \"Jakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3004/members/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3004",
+							"path": [
+								"members",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5d-dbXlNzrjIRsCQ/5adPNPAqIG1qY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 Sep 2022 03:44:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nama\": \"Rine Winsrizal\",\n    \"email\": \"rine@gmail.com\",\n    \"alamat\": \"Jakarta\",\n    \"id\": 2\n}"
+				}
+			]
+		}
+	]
+}
