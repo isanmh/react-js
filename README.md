@@ -1,6 +1,6 @@
 # Final Lab Project React Js By Isanmh 
 
-Untuk pelatihan pada tgl 7 sep 2022 - 9 sep 2022, mencangkup Dasar React Js, Calling RestfullAPI with Json Server & Axios, Global API, Component LifeCycle, React Hooks, React Router DOM dll.
+Untuk pelatihan pada tgl 7 sep 2022 - 9 sep 2022, mencangkup Dasar React Js, Calling RestfullAPI with Json Server & Axios, Global API, Component LifeCycle, React Hooks, React Router DOM v5, React Reveal, React SweatAlert2, dll.
 
 # Cara instalasi project 
 1. Download Via Zip -> pada tab Code 
